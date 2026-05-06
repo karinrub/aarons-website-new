@@ -1,0 +1,386 @@
+/* ── Section shell ──────────────────────────────────────────── */
+
+.weekly-lessons {
+  background: #e7d7bf;
+  color: #1d1710;
+  padding: clamp(72px, 9vw, 120px) clamp(28px, 7vw, 112px);
+}
+
+.weekly-lessons__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1fr);
+  gap: clamp(44px, 6vw, 84px);
+  align-items: center;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+/* ── Media ──────────────────────────────────────────────────── */
+
+.weekly-lessons__visuals {
+  display: grid;
+  gap: clamp(16px, 2vw, 24px);
+}
+
+.weekly-lessons__media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: 22px;
+  box-shadow: 0 30px 90px rgba(59, 42, 24, 0.22);
+  background: #d9ccb8;
+}
+
+.weekly-lessons__video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.weekly-lessons__video-control {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  display: inline-flex;
+  gap: 8px;
+  min-width: 74px;
+  min-height: 42px;
+  padding: 0 16px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(23, 18, 12, 0.72);
+  color: #fffaf1;
+  border: 1px solid rgba(255, 250, 241, 0.24);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  line-height: 1;
+  text-transform: uppercase;
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.weekly-lessons__video-control:hover {
+  background: rgba(23, 18, 12, 0.86);
+  transform: translateY(-1px);
+}
+
+.weekly-lessons__video-control:focus-visible {
+  outline: 3px solid rgba(216, 189, 131, 0.46);
+  outline-offset: 4px;
+}
+
+.weekly-lessons__story-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(14px, 1.8vw, 20px);
+}
+
+.weekly-lessons__story-image {
+  overflow: hidden;
+  height: clamp(150px, 16vw, 230px);
+  margin: 0;
+  background: #d9ccb8;
+  border: 1px solid rgba(102, 76, 40, 0.14);
+  border-radius: 14px;
+  box-shadow: 0 20px 56px rgba(59, 42, 24, 0.14);
+}
+
+.weekly-lessons__story-image:nth-child(2) {
+  margin-top: 30px;
+}
+
+.weekly-lessons__story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ── Content (text) ─────────────────────────────────────────── */
+
+.weekly-lessons__content {
+  max-width: 620px;
+}
+
+.weekly-lessons__label {
+  margin: 0 0 20px;
+  color: var(--color-gold);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.weekly-lessons__title {
+  margin: 0;
+  color: #17110b;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 4vw, 4rem);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.02;
+}
+
+.weekly-lessons__body {
+  display: grid;
+  gap: 22px;
+  margin-top: 28px;
+  max-width: 720px;
+  color: #5a4b3b;
+  font-size: clamp(1.02rem, 1.35vw, 1.18rem);
+  line-height: 1.72;
+}
+
+.weekly-lessons__body p {
+  margin: 0;
+}
+
+.weekly-lessons__quick-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 30px 0 0;
+}
+
+.weekly-lessons__quick-facts div {
+  min-width: 0;
+  padding: 17px 16px;
+  background: rgba(255, 252, 246, 0.46);
+  border: 1px solid rgba(102, 76, 40, 0.16);
+  border-radius: 8px;
+}
+
+.weekly-lessons__quick-facts dt {
+  margin: 0 0 8px;
+  color: var(--color-gold);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.weekly-lessons__quick-facts dd {
+  margin: 0;
+  color: #1d1710;
+  font-size: 0.98rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.weekly-lessons__features {
+  display: grid;
+  margin: 28px 0 0;
+  padding: 0;
+  color: #2b2218;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  list-style: none;
+  border-top: 1px solid rgba(102, 76, 40, 0.22);
+}
+
+.weekly-lessons__feature {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  padding: 17px 0;
+  border-bottom: 1px solid rgba(102, 76, 40, 0.22);
+}
+
+.weekly-lessons__feature-icon {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  margin-top: 1px;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold);
+  transition: color 200ms ease;
+}
+
+.weekly-lessons__feature:hover .weekly-lessons__feature-icon {
+  color: #b8842c;
+}
+
+.weekly-lessons__feature-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.weekly-lessons__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  margin-top: 32px;
+  padding: 0 44px;
+  background: var(--color-gold-light);
+  color: #17130d;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background-color 200ms ease,
+    box-shadow 200ms ease,
+    transform 200ms ease;
+}
+
+.weekly-lessons__cta:hover {
+  background: var(--color-gold-hover);
+  box-shadow: 0 12px 30px rgba(64, 46, 25, 0.2);
+  transform: translateY(-2px);
+}
+
+.weekly-lessons__cta:focus-visible {
+  outline: 3px solid rgba(216, 189, 131, 0.46);
+  outline-offset: 4px;
+}
+
+@media (hover: none) {
+  .weekly-lessons__cta:hover,
+  .weekly-lessons__video-control:hover {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+
+@media (max-width: 960px) {
+  .weekly-lessons {
+    padding: 72px 24px 68px;
+  }
+
+  .weekly-lessons__inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .weekly-lessons__visuals {
+    grid-template-columns: 1fr;
+  }
+
+  .weekly-lessons__media {
+    aspect-ratio: 16 / 9;
+    border-radius: 18px;
+  }
+
+  .weekly-lessons__story-images {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .weekly-lessons__story-image {
+    height: 190px;
+    border-radius: 12px;
+  }
+
+  .weekly-lessons__story-image:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .weekly-lessons__content {
+    max-width: 720px;
+  }
+
+  .weekly-lessons__label {
+    margin-bottom: 24px;
+  }
+
+  .weekly-lessons__title {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+    line-height: 1;
+  }
+
+  .weekly-lessons__body {
+    margin-top: 28px;
+  }
+
+  .weekly-lessons__quick-facts {
+    max-width: 680px;
+  }
+
+  .weekly-lessons__features {
+    margin-top: 30px;
+  }
+
+  .weekly-lessons__feature {
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 18px;
+  }
+
+}
+
+@media (max-width: 560px) {
+  .weekly-lessons {
+    padding: 60px 20px;
+  }
+
+  .weekly-lessons__inner {
+    gap: 34px;
+  }
+
+  .weekly-lessons__visuals {
+    gap: 14px;
+  }
+
+  .weekly-lessons__media {
+    aspect-ratio: 16 / 10;
+  }
+
+  .weekly-lessons__title {
+    font-size: clamp(2.1rem, 10vw, 2.85rem);
+  }
+
+  .weekly-lessons__quick-facts {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .weekly-lessons__quick-facts div {
+    display: grid;
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 14px;
+    align-items: baseline;
+    padding: 14px 15px;
+  }
+
+  .weekly-lessons__quick-facts dt {
+    margin: 0;
+  }
+
+  .weekly-lessons__story-images {
+    grid-template-columns: 1fr;
+  }
+
+  .weekly-lessons__story-image {
+    height: 210px;
+  }
+
+  .weekly-lessons__feature {
+    gap: 14px;
+    padding: 15px 0;
+  }
+
+  .weekly-lessons__cta {
+    width: 100%;
+    padding: 0 24px;
+  }
+}

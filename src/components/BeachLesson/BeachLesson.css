@@ -1,0 +1,321 @@
+.beach-lesson {
+  background: #f3eadc;
+  color: #1c1711;
+  padding: clamp(52px, 6vw, 78px) clamp(28px, 7vw, 112px);
+}
+
+.beach-lesson__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1fr);
+  gap: clamp(36px, 5vw, 68px);
+  align-items: center;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.beach-lesson__content {
+  max-width: 620px;
+}
+
+.beach-lesson__label {
+  margin: 0 0 20px;
+  color: var(--color-gold);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.beach-lesson__title {
+  margin: 0;
+  color: #18120c;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 4vw, 4rem);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.06;
+}
+
+.beach-lesson__body {
+  display: grid;
+  gap: 16px;
+  margin-top: 28px;
+  color: #5d5144;
+  font-size: clamp(1rem, 1.15vw, 1.12rem);
+  line-height: 1.62;
+}
+
+.beach-lesson__body p {
+  margin: 0;
+}
+
+.beach-lesson__quick-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 30px 0 0;
+}
+
+.beach-lesson__quick-facts div {
+  min-width: 0;
+  padding: 17px 16px;
+  background: rgba(255, 252, 246, 0.56);
+  border: 1px solid rgba(122, 94, 56, 0.16);
+  border-radius: 8px;
+}
+
+.beach-lesson__quick-facts dt {
+  margin: 0 0 8px;
+  color: var(--color-gold);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.beach-lesson__quick-facts dd {
+  margin: 0;
+  color: #1c1711;
+  font-size: 0.98rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.beach-lesson__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  margin-top: 36px;
+  padding: 0 44px;
+  background: var(--color-gold-light);
+  color: #17130d;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background-color 200ms ease,
+    box-shadow 200ms ease,
+    transform 200ms ease;
+}
+
+.beach-lesson__cta:hover {
+  background: var(--color-gold-hover);
+  box-shadow: 0 12px 30px rgba(64, 46, 25, 0.2);
+  transform: translateY(-2px);
+}
+
+.beach-lesson__cta:focus-visible {
+  outline: 3px solid rgba(216, 189, 131, 0.46);
+  outline-offset: 4px;
+}
+
+.beach-lesson__features {
+  display: grid;
+  margin: 28px 0 0;
+  padding: 0;
+  color: #2d251c;
+  font-size: 0.96rem;
+  line-height: 1.45;
+  list-style: none;
+  border-top: 1px solid rgba(122, 94, 56, 0.2);
+}
+
+.beach-lesson__feature {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(122, 94, 56, 0.2);
+}
+
+.beach-lesson__feature-icon {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  margin-top: 1px;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold);
+  transition: color 200ms ease;
+}
+
+.beach-lesson__feature:hover .beach-lesson__feature-icon {
+  color: #b8842c;
+}
+
+.beach-lesson__feature-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.75;
+}
+
+.beach-lesson__media {
+  position: relative;
+  overflow: hidden;
+  height: min(54vw, 580px);
+  max-height: calc(100vh - 120px);
+  background: #d9ccb8;
+  border-radius: 22px;
+  box-shadow: 0 28px 80px rgba(64, 46, 25, 0.18);
+}
+
+.beach-lesson__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.beach-lesson__video-control {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  display: inline-flex;
+  gap: 8px;
+  min-width: 74px;
+  min-height: 42px;
+  padding: 0 16px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(23, 18, 12, 0.72);
+  color: #fffaf1;
+  border: 1px solid rgba(255, 250, 241, 0.24);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  line-height: 1;
+  text-transform: uppercase;
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.beach-lesson__video-control:hover {
+  background: rgba(23, 18, 12, 0.86);
+  transform: translateY(-1px);
+}
+
+.beach-lesson__video-control:focus-visible {
+  outline: 3px solid rgba(216, 189, 131, 0.46);
+  outline-offset: 4px;
+}
+
+@media (hover: none) {
+  .beach-lesson__cta:hover,
+  .beach-lesson__video-control:hover {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .beach-lesson {
+    padding: 64px 24px;
+  }
+
+  .beach-lesson__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .beach-lesson__content {
+    max-width: 720px;
+  }
+
+  .beach-lesson__label {
+    margin-bottom: 24px;
+  }
+
+  .beach-lesson__title {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+    line-height: 1;
+  }
+
+  .beach-lesson__body {
+    margin-top: 28px;
+  }
+
+  .beach-lesson__quick-facts {
+    max-width: 680px;
+  }
+
+  .beach-lesson__features {
+    margin-top: 30px;
+  }
+
+  .beach-lesson__feature {
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 18px;
+    padding: 18px 0;
+  }
+
+  .beach-lesson__media {
+    height: auto;
+    aspect-ratio: 16 / 10;
+    border-radius: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .beach-lesson {
+    padding: 60px 20px;
+  }
+
+  .beach-lesson__inner {
+    gap: 34px;
+  }
+
+  .beach-lesson__label {
+    margin-bottom: 18px;
+  }
+
+  .beach-lesson__title {
+    font-size: clamp(2.1rem, 10vw, 2.85rem);
+  }
+
+  .beach-lesson__quick-facts {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .beach-lesson__quick-facts div {
+    display: grid;
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 14px;
+    align-items: baseline;
+    padding: 14px 15px;
+  }
+
+  .beach-lesson__quick-facts dt {
+    margin: 0;
+  }
+
+  .beach-lesson__feature {
+    gap: 14px;
+    padding: 15px 0;
+  }
+
+  .beach-lesson__media {
+    aspect-ratio: 4 / 5;
+  }
+
+  .beach-lesson__cta {
+    width: 100%;
+    padding: 0 24px;
+  }
+}

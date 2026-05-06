@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title>AZ Tuned Horizon favicon</title>
+  <rect width="512" height="512" fill="#17120c" />
+  <g fill="#d7b978">
+    <polygon points="70 356 154 128 210 128 126 356" />
+    <polygon points="183 128 238 128 322 356 266 356" />
+    <polygon points="142 260 250 260 262 302 130 302" />
+    <polygon points="288 128 446 128 446 178 382 178 278 356 218 356 322 178 288 178" />
+    <polygon points="278 306 452 306 452 356 248 356" />
+  </g>
+  <path
+    d="M84 398 C130 376 170 394 210 382 C248 370 282 372 318 388 C360 406 394 388 438 378"
+    fill="none"
+    stroke="#f3eadc"
+    stroke-width="28"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
